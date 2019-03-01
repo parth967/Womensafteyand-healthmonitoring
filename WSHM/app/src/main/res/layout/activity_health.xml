@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Health">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="517dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp"
+        android:background="@color/colorAccent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="43dp"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/temptext"
+                android:layout_width="355dp"
+                android:layout_height="148dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                android:background="#ffffff"
+                android:fontFamily="@string/common_google_play_services_update_text"/>
+        </RelativeLayout>
+        <!-- one child layout containing other layouts or views -->
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="517dp"
+        android:layout_height="193dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="106dp"
+        android:background="@color/black_overlay"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="312dp"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/heart_btn"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="62dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:width="200dp"
+                android:textColor="#ffffff"
+                android:onClick="heart"
+                android:src="@color/colorPrimaryDark"
+                android:text="HeartBeat"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="62dp" />
+
+            <Button
+                android:id="@+id/temp_btn"
+                android:layout_width="217dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/heart_btn"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="18dp"
+                android:onClick="temp"
+                android:textColor="#ffffff"
+                android:src="@color/colorPrimary"
+                android:text="@string/bodytemperature"
+                android:layout_alignLeft="@+id/heart_btn" />
+
+        </RelativeLayout>
+        <!-- one child layout containing other layouts or views -->
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_marginStart="0dp"
+        android:onClick="connect"
+        android:text="Connect"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp" />
+</RelativeLayout>
